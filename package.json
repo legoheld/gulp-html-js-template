@@ -1,0 +1,30 @@
+{
+  "name": "gulp-html-js-template",
+  "version": "0.1.4",
+  "description": "Gulp task that converts a html file with template definitions into a js file containing an object with all templates as strings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "template",
+    "js",
+    "gulpplugin",
+    "gulpfriendly",
+    "handlebar",
+    "underscore",
+    "microtemplating",
+    "mustache",
+    "ejs",
+    "plates"
+  ],
+  "author": "Michael Heimann",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "gulp-util": "^3.0.1",
+    "lodash": "^2.4.1",
+    "through2": "^0.6.1"
+  }
+}
