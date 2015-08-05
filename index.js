@@ -34,7 +34,8 @@ module.exports = function( options ) {
 			var html = cheerio.load( file.contents.toString() );
 			var templates = parseTemplates( html );
 			var fileContent = parseFileContent( html );
-			var content = template( fileContent, { templates:JSON.stringify( templates ) } );
+			var compiled = template( fileContent );
+			var content = compiled( { templates:JSON.stringify( templates ) } );
 			file.contents = new Buffer( content );
 		}
 
