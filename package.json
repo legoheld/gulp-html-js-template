@@ -1,6 +1,6 @@
 {
   "name": "gulp-html-js-template",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Gulp task that converts a html file with template definitions into a js file containing an object with all templates as strings.",
   "main": "index.js",
   "scripts": {
