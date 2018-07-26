@@ -1,4 +1,4 @@
-var gutil = require('gulp-util');
+var PluginError = require('plugin-error');
 var through = require('through2');
 var _ = require('lodash');
 var cheerio = require("cheerio");
@@ -25,7 +25,7 @@ module.exports = function( options ) {
 		}
 
 		if( file.isStream() ) {
-			cb(new gutil.PluginError( PLUGIN_NAME, 'Streaming not supported'));
+			cb(new PluginError( PLUGIN_NAME, 'Streaming not supported' ));
 			return;
 		}
 		
